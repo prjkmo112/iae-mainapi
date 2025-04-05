@@ -47,8 +47,8 @@ class ProcessImage:
         pad_arr = []
         for pad_item in pad:
             if pad_item%2 == 0:
-                pad_tupple_item = (int(pad_item/2), int(pad_item/2))
-                pad_arr.append(pad_tupple_item)
+                pad_tuple_item = (int(pad_item/2), int(pad_item/2))
+                pad_arr.append(pad_tuple_item)
             else:
                 x_pad = int(pad_item/2)
                 y_pad = pad_item - x_pad
