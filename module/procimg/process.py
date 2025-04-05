@@ -40,9 +40,6 @@ class ProcessImage:
         img = img.convert("RGB")
         return np.array(img)
     
-    def resize(self, imgnpData, per):
-        return imgnpData[ int(imgnpData.shape[0]*per): , : , : ]
-    
     def __makePaddingTuple(self, pad):
         pad_arr = []
         for pad_item in pad:
