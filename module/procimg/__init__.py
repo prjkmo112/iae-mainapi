@@ -2,4 +2,4 @@
 
 __version__ = "0.1.0"
 
-from .process import ProcessImage
+from .process import ProcessImage as ProcessImage
