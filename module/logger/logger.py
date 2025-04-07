@@ -4,10 +4,12 @@ import logging.config
 import yaml
 
 # Set logger directory
-if not os.path.exists('logs'):
-    os.makedirs('logs')
+logDir = os.path.join(os.path.dirname(__file__), '../../logs')
+if not os.path.exists(logDir):
+    os.makedirs(logDir)
 
-with open('config/logging_config.yaml', 'r') as f:
+configDir = os.path.join(os.path.dirname(__file__), '../../config/logging_config.yaml')
+with open(configDir, 'r') as f:
     config = yaml.safe_load(f.read())
 
 logging.config.dictConfig(config)
