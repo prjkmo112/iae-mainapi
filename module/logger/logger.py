@@ -12,4 +12,4 @@ with open('config/logging_config.yaml', 'r') as f:
 
 logging.config.dictConfig(config)
 
-logger = logging.getLogger('mainapi')
+logger = logging.getLogger('app')
