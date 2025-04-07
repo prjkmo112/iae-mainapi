@@ -6,7 +6,7 @@ from logger import logger
 
 class ImgProc:
     @staticmethod
-    def img_np2byte(self, npimg, format=None):
+    def img_np2byte(npimg, format=None):
         img = Image.fromarray(npimg)
         byteimg = io.BytesIO()
         img.save(byteimg, format)
