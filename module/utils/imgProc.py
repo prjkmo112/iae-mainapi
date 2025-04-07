@@ -2,7 +2,7 @@ import io
 import base64
 from PIL import Image
 
-from logger import logger
+from module.logger import logger
 
 class ImgProc:
     @staticmethod

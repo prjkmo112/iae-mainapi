@@ -11,3 +11,8 @@
 *.njsproj
 *.sln
 *.sw?
+
+*.log
+logs/
+
+__pycache__/
