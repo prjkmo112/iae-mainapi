@@ -14,6 +14,6 @@ class ImgProc:
         return byteimg
 
     @staticmethod
-    def img_byte2base64(self, byteimg):
+    def img_byte2base64(byteimg):
         base64img = base64.b64encode(byteimg).decode("utf-8")
         return base64img
