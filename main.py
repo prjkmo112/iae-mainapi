@@ -8,7 +8,7 @@ from module.logger import logger
 import module.utils as utils
 
 
-with open(os.path.join(os.path.dirname(__file__), 'config/main.yaml'), 'r') as f:
+with open(os.path.join(os.path.dirname(__file__), 'config/main.yaml'), 'r', encoding="utf-8") as f:
     CONFIG = yaml.safe_load(f.read())
 
 app = FastAPI(
